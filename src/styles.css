@@ -1,0 +1,88 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #d4d4dc;
+    }
+
+  button {
+    font-size: larger;
+  }
+
+  .calc {
+    height: 600px;
+    width: 300px;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 37px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .display{
+    height: 250px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonPanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .button,
+  .operators,
+  .spclOperators{
+    flex: 1 0 20%;
+    padding: 7px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    border: none; /* Remove the border */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+  }
+  .button
+  {
+    background-color: #333333;
+    color: white;
+  }
+
+  .operators{
+    background-color: #ff9f0a;
+    color: white;
+  }
+
+  .spclOperators{
+    background-color: #a5a5a5;
+    color: black;
+  }
+
+  .button:hover,
+  .operators:hover,
+  .spclOperators:hover {
+      background-color: #666666; /* Lighten the color on hover */
+  }
+
+  .inputDisplay,
+  .prevResult
+  {
+    flex: 1;
+  }
+
+  .inputDisplay{
+    color:white;
+    font-size: xx-large;
+/* text-align: right; */
+    padding-bottom: 10px;
+    padding-right: 6px;
+    display: flex;
+    justify-content: end;
+    align-items:end;
+  }
